@@ -1,0 +1,220 @@
+@font-face {
+    font-family: 'NewSpiritCondensed';
+    src: url('NewSpirit-RegularCondensed.woff2') format('woff2'),
+        url('NewSpirit-RegularCondensed.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+body{
+  background-color: #110D0D;
+  font-family: 'IBM Plex Mono', monospace;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Vertical spacing between frames */
+
+}
+.b{
+  background-color: #110D0D;
+  font-family: 'NewSpiritCondensed';
+  font-weight: 600;
+  font-style: normal;
+
+}
+.cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px; /* Adjust size of the cursor circle */
+    height: 170px;
+    border-radius: 50%; /* Create a round shape */
+    background-color: rgba(255, 255, 255, 0.5); /* Dim white color with transparency */
+    pointer-events: none; /* Ensure the circle does not interfere with mouse events */
+    z-index: 9999; /* Make sure the circle appears above other elements */
+    transform: translate(-50%, -50%); /* Center the circle based on its own dimensions */
+    transition: transform 0.1s ease; /* Add smooth transition effect */
+}
+p, h3 {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2rem;
+  color: white;
+}
+h1{
+  font-family: 'NewSpiritCondensed';
+  font-size: 7rem;
+  color: white;
+}
+h2{
+  font-family: 'NewSpiritCondensed';
+  font-size: 4rem;
+  color: white;
+  padding: 0;
+  line-height: 0;
+
+}
+
+h4, h5, h6 {
+  font-family: 'NewSpiritCondensed';
+  font-size: 24px;
+  color: white;
+
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+
+    /* Frame styles */
+.frame {
+      width: 90%; /* Take up 90% of the page width */
+      padding: 20px;
+      display: grid;
+      grid-template-columns: auto 1fr auto; /* Adjust as needed */
+      gap: 20px;
+    }
+
+.frame img {
+
+  max-width: 100%;
+  height: auto;
+  }
+
+#img1{
+  height: 270px;
+  position: absolute;
+  right: 0px;
+  top: 300px;
+}
+
+#img2{
+  height: 250px;
+  position: absolute;
+  left: 80px;
+  top: 160px;
+}
+#img3{
+  height: 250px;
+  position: absolute;
+  left: -10px;
+  top: 580px;
+}
+.meFrame  {
+      text-align: center;
+    }
+.frame1title{
+  align-items: center;
+  text-align: center;
+  padding: 100px;
+  padding-top: 300px;
+  margin-left: 50px;
+  line-height: 6em;
+}
+.projectsFrame {
+      width: 90%; /* Take up 90% of the page width */
+      padding: 20px;
+      display: grid;
+      grid-template-columns: auto 1fr auto; /* Adjust as needed */
+      gap: 20px;
+    }
+.meFrame {
+          width: 90%; /* Take up 90% of the page width */
+          padding: 20px;
+          display: grid;
+          grid-template-columns: auto 1fr auto; /* Adjust as needed */
+          gap: 20px;
+          padding-bottom: 100px;
+        }
+.meFrame img {
+
+      max-width: 100%;
+      height: auto;
+      }
+
+#nav{
+  position: absolute;
+  left:0px;
+  top: 40px;
+  margin-left: 50px;
+}
+#nav1{
+  position: absolute;
+  left:140px;
+  top: 40px;
+  margin-left: 50px;
+}
+#img5{
+  width: 80%;
+  margin-left: 60px;
+
+}
+
+.banner-container {
+        width: 1400px;
+        height: 120px;
+        background-color: #110D0D;
+        overflow: hidden;
+        position: absolute;
+        left: 0px;
+        z-index: -1;
+    }
+
+    .banner {
+        position: absolute;
+        top: 20%;
+        left: 200%;
+        line-height: 50px;
+        white-space: nowrap;
+        animation: moveBanner 10s linear infinite;
+
+    }
+
+    @keyframes moveBanner {
+        0% { left: 100%; }
+        100% { left: -100%; }
+    }
+
+    .banner-text {
+       font-family: 'NewSpiritCondensed';
+       font-size: 4rem;
+        color: white;
+        background-color:  #110D0D;
+        margin-right: 20px;
+        padding: 0 20px;
+    }
+    #desc{
+      margin-top: 300px;
+      text-align: center;
+    }
+    .projects-container{
+      display: flex;
+      align-content: space-between;
+
+    }
+    #l1{
+    margin-left: 200px;
+    }
+    #l2{
+    margin-left: 100px;
+    }
+    details{
+      color: white;
+    }
+    summary{
+      font-family: "IBM Plex Mono", monospace;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 1.2rem;
+      color: white;
+      text-align: left;
+    }
+    .questions{
+      margin-top: 200px;
+
+    }

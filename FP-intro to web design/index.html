@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Douaa Zouhir</title>
+    <!-- Media query for full browser width --> <link rel="stylesheet" media="only screen and (min-width: 961px)" href="style_desktop.css">
+</head>
+<body>
+  <div class="banner-container">
+    <div class="banner">
+        <span class="banner-text">Click Me</span>
+        <span class="banner-text">Click Me </span>
+        <span class="banner-text">Click Me </span>
+        <span class="banner-text">Click Me </span>
+        <span class="banner-text">Click Me </span>
+        <span class="banner-text">Click Me</span>
+        <span class="banner-text">Click Me </span>
+        <span class="banner-text">Click Me </span>
+        <span class="banner-text">Click Me </span>
+        <span class="banner-text">Click Me </span>
+        <span class="banner-text">Click Me</span>
+        <span class="banner-text">Click Me </span>
+        <span class="banner-text">Click Me </span>
+        <span class="banner-text">Click Me </span>
+        <span class="banner-text">Click Me </span>
+        <span class="banner-text">Click Me</span>
+        <span class="banner-text">Click Me </span>
+        <span class="banner-text">Click Me </span>
+        <span class="banner-text">Click Me </span>
+        <span class="banner-text">Click Me </span>
+        <span class="banner-text">Click Me </span>
+        <span class="banner-text">Click Me </span>
+        <span class="banner-text">Click Me</span>
+        <span class="banner-text">Click Me </span>
+        <span class="banner-text">Click Me </span>
+        <span class="banner-text">Click Me </span>
+        <span class="banner-text">Click Me </span>
+        <span class="banner-text">Click Me</span>
+        <span class="banner-text">Click Me </span>
+        <span class="banner-text">Click Me </span>
+        <span class="banner-text">Click Me </span>
+        <span class="banner-text">Click Me </span>
+    </div>
+</div>
+    <video id="myVideo" width="100%" >
+        <source src="./countdown.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <script>
+        document.getElementById('myVideo').addEventListener('ended', function() {
+            window.location.href = './next_page.html';
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+        document.body.addEventListener('click', function() {
+           // Get the video element
+           var video = document.getElementById('myVideo');
+           if (video.paused) {
+               video.play();
+           }
+       });
+   });
+    </script>
+</body>
+</html>

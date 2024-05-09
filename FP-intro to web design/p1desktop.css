@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'NewSpiritCondensed';
+    src: url('NewSpirit-RegularCondensed.woff2') format('woff2'),
+        url('NewSpirit-RegularCondensed.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+body{
+  background-color: #110D0D;
+  font-family: 'IBM Plex Mono', monospace;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  height: 100vh;
+  color: white;
+
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #110D0D;
+    border: white solid 2px;
+    margin-top: 0;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.right-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #110D0D;
+    border: white solid 2px;
+    margin-top: 0;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+#nav{
+  position: absolute;
+  left:0px;
+  top: 0px;
+  margin-left: 50px;
+  padding: 0;
+}
+#nav1{
+  position: absolute;
+  left:140px;
+  top: 0px;
+  margin-left: 50px;
+  padding: 0;
+}
+p, h3 {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2rem;
+  color: white;
+  padding: 0;
+}
+h1{
+  font-family: 'NewSpiritCondensed';
+  font-size: 7rem;
+  color: white;
+}
+h2{
+  font-family: 'NewSpiritCondensed';
+  font-size: 4rem;
+  color: white;
+  padding: 0;
+  line-height: 0;
+
+}
+
+h4, h5, h6 {
+  font-family: 'NewSpiritCondensed';
+  font-size: 24px;
+  color: white;
+
+}
+a{
+  color: white;
+  text-decoration: none;
+}

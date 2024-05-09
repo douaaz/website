@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Douaa Zouhir</title>
+    <!-- Media query for full browser width --> <link rel="stylesheet" media="only screen and (min-width: 961px)" href="style2_desktop.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $(this).text("Douaa Zouhir");
+    $("button").animate({
+    position: 'absolute',
+    top: '0px',
+    left: '28%',
+      height: '150px',
+      width: '600px',
+      zIndex: '-1'
+    });
+    $("button").css({
+      position: 'absolute',
+      top: 0,
+      height: '150px',
+      width: '600px',
+      fontSize: '2rem',
+      zIndex: '9999'
+    });
+    $("button").animate({fontSize: '2rem', position: 'absolute'});
+  });
+  $(".frame").css({
+      marginTop: '100px' // Adjust this value as needed
+    });
+});
+document.addEventListener('mousemove', (e) => {
+  const cursor = document.querySelector('.cursor');
+  const cursorSize = parseInt(window.getComputedStyle(cursor).getPropertyValue('width'));
+
+  const mouseX = e.pageX - cursorSize / 2;
+  const mouseY = e.pageY - cursorSize / 2;
+
+  cursor.style.transform = `translate(${mouseX}px, ${mouseY}px)`;
+});
+function scrollToElement(elementId) {
+     const element = document.getElementById(elementId);
+     if (element) {
+       element.scrollIntoView({ behavior: 'smooth' });
+     }
+   }
+
+   // Add click event listeners to navigation links
+   document.addEventListener('DOMContentLoaded', function() {
+     const aboutMeLink = document.getElementById('nav');
+     const projectsLink = document.getElementById('nav1');
+
+     if (aboutMeLink && projectsLink) {
+       aboutMeLink.addEventListener('click', function(event) {
+         event.preventDefault();
+         scrollToElement('meFrame');
+       });
+
+       projectsLink.addEventListener('click', function(event) {
+         event.preventDefault();
+         scrollToElement('projectsFrame');
+       });
+     }
+     });
+</script>
+  </head>
+  <body>
+    <div class="cursor"></div>
+    <div >
+ <button class="b" style="background:#110D0D;color: white;height:100%;width: 100%;position: fixed;
+           top: 0; left: 0;font-size: 90px;border: None;z-index:99999;">Douaa Zouhir <br> Presents</button>
+<a href="#meFrame"><h3 id="nav">About me</h3></a>
+<a href="#projectsFrame"><h3 id="nav1">Projects</h3></a>
+ </div>
+ <div class="frame">
+   <div class="frame1title">
+     <h1>I'm a Good Software Developer.</h1>
+     <h2>just ask my mom.</h2>
+   </div>
+    <img id="img1" src="./image1.jpeg" alt="Image 1">
+    <img id="img2" src="./image2.png" alt="Image 2">
+    <img id="img3" src="./image3.png" alt="Image 3">
+ </div>
+
+ <!-- Second Frame -->
+ <div class="projectsFrame" id="projectsFrame">
+   <img id="img5" src="./image5.jpeg" alt="Secondary Image">
+   <div>
+     <div class="banner-container">
+       <div class="banner">
+           <span class="banner-text">Projects</span>
+           <span class="banner-text">Projects </span>
+           <span class="banner-text">Projects </span>
+           <span class="banner-text">Projects </span>
+           <span class="banner-text">Projects</span>
+           <span class="banner-text">Projects </span>
+           <span class="banner-text">Projects </span>
+           <span class="banner-text">Projects </span>
+           <span class="banner-text">Projects</span>
+           <span class="banner-text">Projects </span>
+           <span class="banner-text">Projects </span>
+           <span class="banner-text">Projects </span>
+       </div>
+   </div>
+     <p id="desc">Take a look at some of my projects below. Click on the buttons to view them in detail. Each project represents a unique endeavor showcasing my skills and creativity. Feel free to explore and get in touch if you have any questions or feedback!</p>
+     <div class="projects-container">
+       <a href="./project1.html"><h4 id="l1">Mawed</h4></a>
+       <a href="./project2.html"><h4 id="l2">Casablanca Reimagined</h4></a>
+     </div>
+   </div>
+ </div>
+
+ <!-- Third Frame (About Me) -->
+ <div class="meFrame" id="meFrame">
+   <h2>About Me</h2>
+   <div class="questions">
+     <!-- FAQ Section-->
+     <details>
+       <summary>What is your educational background?</summary>
+       <p>I am attending NYU Shanghai, where I majored in Computer Science and minored in Interactive Media.</p>
+     </details>
+     <details>
+       <summary>What programming languages are you proficient in?</summary>
+       <p>I am proficient in several programming languages including Java, Python, JavaScript, and C++. I have hands-on experience with these languages through coursework, projects, and internships.</p>
+     </details>
+     <!-- Add more FAQ items as needed -->
+   </div>
+ </div>
+<h3 id="footer1">Douaa Zouhir</h3>
+<h3 id="footer2">dz2238@nyu.edu</h3>
+  </body>
+</html>
